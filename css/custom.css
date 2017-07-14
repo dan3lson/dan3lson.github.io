@@ -1,14 +1,11 @@
-/* Leksi blue: #1060AF */
-
-a:hover {
-  text-decoration: none;
-}
-a.btn.btn-warning {
-  color: #FFF;
-  text-transform: uppercase;
-}
-body {
-  font-family: monospace;
+section {
+  background: url("../images/danelson-rosa.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  height: 850px;
 }
 #body-edu {
   background: url("../images/ehsa.jpg") no-repeat center center;
@@ -17,38 +14,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   padding: 0;
-}
-.bold {
-  font-weight: bold;
-}
-.bubble {
-	background: lightgray;
-	border: 2px solid lightgray;
-	border-radius: 100px;
-	padding: 2px;
-}
-.bubble-green {
-	background: lightgreen;
-	border: 2px solid lightgreen;
-	border-radius: 100px;
-  color: green;
-	padding: 2px;
-}
-.bubble-green i {
-	color: green;
-}
-.bubble-orange {
-	background: orange;
-	border: 2px solid orange;
-	border-radius: 100px;
-  color: white;
-	padding: 2px;
-}
-.bubble-orange i {
-	color: white;
-}
-.center {
-  text-align: center;
 }
 .client-no-pic-female {
   border: 1px solid lightpink;
@@ -81,20 +46,6 @@ body {
   font-size: 20px;
   padding: 15px;
 }
-footer {
-	background: lightgray;
-	padding: 2em;
-	padding-bottom: 0;
-  text-align: center;
-}
-footer a {
-  color: inherit;
-}
-footer a:hover, a:active, a:visited {
-  color: inherit;
-	opacity: .5;
-  text-decoration: none;
-}
 #form-container strong {
   color: dodgerblue;
   font-family: sans-serif;;
@@ -114,23 +65,6 @@ hr {
 }
 .light-gray-section h1, .white-section h1 {
   margin-bottom: 40px;
-}
-.nav-bar {
-  background: #302723;
-  color: dodgerblue;
-  font-size: 27px;
-  margin-bottom: 0;
-  padding: 15px;
-  text-align: center;
-}
-.nav-bar a {
-  color: lightgray;
-}
-.nav-bar a:hover {
-  color: dodgerblue;
-}
-.pointer {
-  cursor: pointer;
 }
 .top-section {
   background: url("../images/danelson_rosa.jpg") no-repeat center center;

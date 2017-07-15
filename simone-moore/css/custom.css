@@ -26,6 +26,18 @@ body {
 	height: 100vh;
 }
 
+#body-gallery {
+	background: url("../images/body-clips.jpg");
+	background-color: #000;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
+}
+
 #body-bio {
 	background: url("../images/body-bio.jpg");
 	background-color: #000;
@@ -38,8 +50,31 @@ body {
 	height: 100vh;
 }
 
+#body-bio .container {
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 1.2rem;
+	color: lightgray;
+	padding: 3rem;
+}
+
+#body-clips .container {
+	background: rgba(0, 0, 0, 0.5);
+	color: lightgray;
+	padding: 3rem;
+}
+
+#body-gallery .container {
+	background: rgba(0, 0, 0, 0.5);
+	color: lightgray;
+	padding: 3rem;
+}
+
 .container {
 	margin-top: 17rem;
+}
+
+.display-1 {
+	font-family: "Snell Roundhand", cursive;
 }
 
 .links {
@@ -55,6 +90,7 @@ body {
 	cursor: pointer;
 	top: -60rem;
 }
+
 .links:hover {
 	background-color: transparent;
 }

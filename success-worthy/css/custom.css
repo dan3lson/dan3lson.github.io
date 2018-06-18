@@ -6,6 +6,16 @@ h2, h3 {
 	margin-bottom: 1rem;
 }
 
+nav a {
+	color: #7030A0;
+	font-weight: 600;
+}
+
+.navbar-brand {
+	color: #FFC000;
+	font-weight: bold;
+}
+
 .sw-yellow {
 	color: #FFC000;
 }

@@ -6,6 +6,10 @@ body {
 	background-color: #000;
 }
 
+.starter-template {
+	padding-top: 3rem;
+}
+
 .bg {
 	background-image: url("../images/danelson-rosa-2.jpeg");
 	background-color: #000;
@@ -14,12 +18,8 @@ body {
 	background-size: cover;
 }
 
-h1#display {
+h1#dr-name-display {
 	font-family: 'Bevan', cursive;
-}
-
-.starter-template {
-  text-align: left;
 }
 
 @media (max-width: 575.98px) {
@@ -41,7 +41,7 @@ h1#display {
 		line-height: 1.0;
 	}
 
-	h1#display {
+	h1#dr-name-display {
 		padding-top: 16rem;
 	}
 
@@ -49,5 +49,9 @@ h1#display {
 		font-size: 3rem;
 		font-weight: 300;
 		line-height: 1.2;
+	}
+
+	.starter-template {
+		padding-top: 0rem;	
 	}
 }

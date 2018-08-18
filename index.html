@@ -15,11 +15,19 @@
 		<link rel="stylesheet" href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
     <link href="css/custom.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<style>
+			#bg { position: fixed; top: 0; left: 0; }
+			.bgwidth { width: 100%; }
+			.bgheight { height: 100%; }
+
+		</style>
   </head>
 
   <body>
-    <main role="main" class="bg">
-      <div class="starter-template container">
+    <main role="main">
+			<img src="images/danelson-rosa.jpeg" id="bg">
+      <div class="homepage container">
         <h1 class="display-3" id="dr-name-display">
 					<span class="badge badge-dark text-left">
 						D A N E L S O N
@@ -29,27 +37,38 @@
 				</h1>
 				<h1 class="display-3">
 					<span class="badge badge-dark">
-						<span class="ec ec-briefcase"></span> Services
+						<span class="ec ec-briefcase"></span> How Can I Help?
 					</span>
 					<br>
 					<span class="badge badge-dark">
-						<span class="ec ec-memo"></span> Blog
+						<span class="ec ec-memo"></span> Hello World
 					</span>
 					<br>
 					<span class="badge badge-dark">
-						<span class="ec ec-bust-in-silhouette"></span> About
+						<span class="ec ec-bust-in-silhouette"></span> The Rundown
 					</span>
 					<br>
-					<span class="badge badge-dark">
+					<!-- <span class="badge badge-dark">
 						<span class="ec ec-helicopter"></span> Drone
 					</span>
 					<br>
 					<span class="badge badge-dark">
 						<span class="ec ec-books"></span> Book Club
+					</span> -->
+					<span class="badge badge-dark">
+						<i class="fab fa-linkedin"></i>
+						&nbsp;
+						<i class="fab fa-instagram"></i>
+						&nbsp;
+						<i class="fab fa-facebook-f"></i>
+						&nbsp;
+						<i class="fab fa-twitter"></i>
+						&nbsp;
+						<i class="fas fa-at"></i>
 					</span>
 				</h1>
 
-      </div>
+      </div> <!-- end of .homepage .container -->
 
     </main>
 
@@ -66,6 +85,33 @@
 			ga('create', 'UA-47718460-1', 'auto');
 			ga('send', 'pageview');
 
+		</script>
+		<script>
+			$(function() {
+
+				var theWindow        = $(window),
+						$bg              = $("#bg"),
+						aspectRatio      = $bg.width() / $bg.height();
+
+				function resizeBg() {
+
+					if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+							$bg
+								.removeClass()
+								.addClass('bgheight');
+					} else {
+							$bg
+								.removeClass()
+								.addClass('bgwidth');
+					}
+
+				}
+
+				theWindow.resize(function() {
+					resizeBg();
+				}).trigger("resize");
+
+			});
 		</script>
   </body>
 </html>

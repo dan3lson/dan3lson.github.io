@@ -29,11 +29,27 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               href="services.html"
+               id="services-main"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false">
               <span class="ec-briefcase"></span>
               Services
             </a>
+            <div class="dropdown-menu" aria-labelledby="services-main">
+              <a class="dropdown-item" href="services/web-development.html">
+                Web Development
+              </a>
+              <a class="dropdown-item" href="services/sprint-design.html">
+                Sprint Design
+              </a>
+              <a class="dropdown-item" href="services/drone.html">
+                Drone Pictures &amp; Videos
+              </a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="blog.html">

@@ -1,0 +1,68 @@
+body {
+	background-color: #000;
+}
+
+.homepage {
+	padding-top: 3rem;
+	position: relative;
+}
+
+.homepage .badge {
+	font-weight: normal;
+}
+
+#bg-homepage { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.display-3 {
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+
+	h1.dr-name-display {
+		padding-top: 16rem;
+	}
+
+	.homepage {
+		padding-top: 0rem;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.display-3 {
+		font-size: 3.1rem;
+		line-height: 1.2;
+	}
+
+	h1.dr-name-display {
+		padding-top: 16rem;
+	}
+
+	.homepage {
+		padding-top: 0rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768.98px) and (max-width: 995.98px) {
+	.display-3 {
+		font-size: 3.5rem;
+		line-height: 1.2;
+	}
+}
+
+a[href="services.html"] span:hover {
+  color: #B79074;
+}
+
+a[href="blog.html"] span:hover {
+  color: #FFD634;
+}
+
+a[href="about.html"] span:hover {
+  color: #87B4D1;
+}

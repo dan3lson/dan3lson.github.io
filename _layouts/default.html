@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+	{% include head.html %}
+  <body>
+		{% if page.url != "/" %}
+			{% include page_nav.html %}
+		{% endif %}
+		<main role="main">
+			{{ content }}
+		</main>
+		{% include scripts.html %}
+  </body>
+</html>

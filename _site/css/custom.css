@@ -1,0 +1,37 @@
+.dr-name-display {
+	font-family: 'Bevan', cursive;
+}
+
+.bg-img-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+  height: 50%;
+  margin-top: 3.5rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.ec-running-man::before {
+	content: "🏃🏾‍";
+}
+
+/*** ABOUT ***/
+#bg-about {
+  background-image: url("../images/bg-hero-about.jpg");
+}
+/*** end of ABOUT ***/
+
+/*** SERVICES ***/
+#bg-services {
+  background-image: url("../images/bg-hero-services.jpg");
+}
+/*** end of SERVICES ***/
+
+/*** BLOG ***/
+#bg-blog {
+  background-image: url("../images/bg-hero-blog.jpg");
+}
+/*** end of BLOG ***/

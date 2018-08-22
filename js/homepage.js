@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var theWindow        = $(window),
-			$bg              = $("#bg"),
+			$bg              = $("#bg-homepage"),
 			aspectRatio      = $bg.width() / $bg.height();
 
 	function resizeBg() {

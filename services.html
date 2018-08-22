@@ -30,11 +30,27 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active"
+               href="#"
+               id="services-main"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false">
               <span class="ec-briefcase"></span>
               Services <span class="sr-only">(current)</span>
             </a>
+            <div class="dropdown-menu" aria-labelledby="services-main">
+              <a class="dropdown-item" href="services/web-development.html">
+                Web Development
+              </a>
+              <a class="dropdown-item" href="services/sprint-design.html">
+                Sprint Design
+              </a>
+              <a class="dropdown-item" href="services/drone.html">
+                Drone Pictures &amp; Videos
+              </a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="blog.html">
@@ -61,9 +77,58 @@
         </h1>
       </div>
 
-      <div class="container mt-3">
-        <span class="ec ec-construction"></span>
-        More about my Services is coming soon...
+      <div class="container mt-3 text-center">
+        <div class="row">
+          <div class="col-md-4">
+              <h1 class="display-4">
+                <span class="ec-nerd-face"></span>
+                <span class="ec-computer"></span>
+                Web Development
+              </h1>
+            <p class="lead">
+              Create your website or web application and share it with the
+              world. I want it to succeed as much as you do.
+            </p>
+            <a class="btn btn-primary disabled"
+               href="services/web-development.html"
+               role="button">
+              Learn more
+            </a>
+          </div>
+          <div class="col-md-4">
+              <h1 class="display-4">
+                <span class="ec-running-man"></span><span class="ec-dash">
+                </span>
+                Sprint Design
+              </h1>
+              <p class="lead">
+                Solve your big problems and test new ideas in five days. Yes,
+                this process actually does work.
+              </p>
+              <a class="btn btn-primary disabled"
+                 href="services/sprint-design.html"
+                 role="button">
+                Learn more
+              </a>
+            </div>
+          <div class="col-md-4">
+              <h1 class="display-4">
+                <span class="ec-camera-flash"></span>
+                <span class="ec-video-camera"></span>
+                Drone Pics &amp; Vids
+              </h1>
+              <p class="lead">
+                Capture and share unforgettable memories that will last a
+                lifetime. Your friends and family will be like
+                <span class="ec-open-mouth"></span>.
+              </p>
+              <a class="btn btn-primary disabled"
+                 href="services/drone.html"
+                 role="button">
+                Learn more
+              </a>
+          </div>
+        </div>
       </div>
     </main>
 

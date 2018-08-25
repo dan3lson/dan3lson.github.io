@@ -1,0 +1,35 @@
+---
+layout: page
+title: Create your website or web application and share it with the world. I want it to succeed as much as you do.
+description: I love creating new websites/web apps for clients who have never had one before and also revamping existing ones to modernize and improve the user experience.
+keywords: danelson rosa developer software engineer freelancer web development hire partner consultant
+header: Services
+header-emoji: memo
+---
+
+<div class="container mt-3">
+  <div class="row">
+    {% for project in site.projects %}
+    <div class="col-md-6 offset-md-3 pt-5 pb-5">
+      <div class="card mb-3">
+        <img class="card-img-top"
+        src="/images/portfolio/{{ project.img_src }}"
+        alt="{{ project.img_alt }}">
+        <div class="card-body">
+          <p class="card-text">
+            {{ project.description }}
+          </p>
+          <blockquote class="quote-card">
+            <p>
+              {{ project.quote }}
+            </p>
+            <cite>
+              {{ project.cite }}
+            </cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

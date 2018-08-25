@@ -1,2 +1,23 @@
+title: DanelsonRosa's Website
 name: Danelson Rosa's Website
+email: hello@danelsonrosa.com
+description: >-
+  Dominican kid from the Bronx, NY -- web developer, blogger, drone
+  enthusiast, and so. much. more. Take a peak into my world.
+twitter_username: dan3lson
+github_username: dan3lson
+linkedin_username: dan3lson
+instagram_username: dan3lson
 timezone: America/New_York
+
+collections:
+  - projects
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

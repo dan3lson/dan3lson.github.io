@@ -11,7 +11,7 @@ instagram_username: dan3lson
 timezone: America/New_York
 
 collections:
-  - projects
+  - portfolio
 
 exclude:
   - Gemfile

@@ -6,27 +6,38 @@ keywords: danelson rosa developer software engineer freelancer web development h
 header: Services
 header-emoji: memo
 ---
-
 <div class="container mt-3">
   <div class="row">
-    {% for project in site.projects %}
-    <div class="col-md-6 offset-md-3 pt-5 pb-5">
-      <div class="card mb-3">
+    {% for project in site.portfolio %}
+    <div class="col-md-8 offset-md-2 pt-5 pb-5">
+      <div class="card">
         <img class="card-img-top"
         src="/images/portfolio/{{ project.img_src }}"
         alt="{{ project.img_alt }}">
         <div class="card-body">
           <p class="card-text">
-            {{ project.description }}
+            <ul class="fa-ul">
+              <li>
+                <span class="fa-li">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                {{ project.description }}
+              </li>
+              {% if project.quote %}
+                <li>
+                  <span class="fa-li">
+                    <i class="fas fa-quote-left"></i>
+                  </span>
+                  {{ project.quote }}
+                  <br>
+                  <span class="text-secondary">{{ project.cite }}</span>
+                </li>
+              {% endif %}
+            </ul>
           </p>
-          <blockquote class="quote-card">
-            <p>
-              {{ project.quote }}
-            </p>
-            <cite>
-              {{ project.cite }}
-            </cite>
-          </blockquote>
+        </div>
+        <div class="card-footer bg-dark">
+          {% include services_call_to_action.html %}
         </div>
       </div>
     </div>

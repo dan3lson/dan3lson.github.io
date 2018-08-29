@@ -2,13 +2,13 @@
   <div class="row">
     <div class="col-8 offset-2">
       <p class="lead">
-        Ready to bring your idea to life? Get in touch today.
+        Ready to {{ include.message }}? Get in touch today.
         <br>
         <a class="btn btn-primary btn-sm"
            href="mailto:hello@danelsonrosa.com?subject=Creating My Website/App"
            role="button">
           <i class="fas fa-envelope"></i>
-          hello@danelsonrosa.com
+          {{ include.email }}
       </a>
       </p>
     </div>

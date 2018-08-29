@@ -43,3 +43,9 @@ blockquote {
   background-image: url("../images/bg-hero-blog.jpg");
 }
 /*** end of BLOG ***/
+
+/*** DRONE ***/
+#bg-drone {
+  background-image: url("../images/bg-hero-drone.jpeg");
+}
+/*** end of DRONE ***/

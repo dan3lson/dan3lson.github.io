@@ -8,8 +8,8 @@ header-emoji: memo
 ---
 <div class="container mt-3">
   <div class="row">
-    {% assign doclist = site.portfolio | sort: "rank"  %}
-    {% for project in doclist %}
+    {% assign projects = site.portfolio | sort: "rank"  %}
+    {% for project in projects %}
     <div class="col-md-8 offset-md-2 pt-5 pb-5">
       <div class="card">
         <img class="card-img-top"

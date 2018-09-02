@@ -1,13 +1,43 @@
 ---
 layout: page
-title: Sharing my thoughts and journey on topics like web development, entrepreneurship, my life, etc.
-description: Sharing my thoughts and journey on topics like web development, entrepreneurship, my life, etc.
+title: Sharing my thoughts and journey on topics like web development, entrepreneurship, and my life.
+description: Sharing my thoughts and journey on topics like web development, entrepreneurship, and my life.
 keywords: danelson rosa blog freelancer drone web development hire entrepreneurship life blogger
 header: Blog
 header-emoji: memo
 ---
 
 <div class="container mt-3">
-  <span class="ec ec-construction"></span>
-  Blog content is coming soon...
+  <div>
+    {% assign posts = site.posts | sort: "rank"  %}
+    {% for post in posts %}
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="card">
+            <img class="card-img-top img-fluid"
+                 src="/images/blog/{{ post.img_src }}"
+                 alt="{{ post.title }}"
+                 title="{{ post.title }}">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </h5>
+              <p class="card-text">
+                <div class="mb-1 text-muted">
+                  {{ post.date | date: "%b %-d, %Y" }}
+                </div>
+                  {{ post.content | truncate: 200 }}
+                  <a href="{{ post.url }}">
+                    continue reading
+                    <i class="far fa-hand-point-right"></i>
+                  </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

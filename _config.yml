@@ -12,12 +12,10 @@ timezone: America/New_York
 
 collections:
   - portfolio
+  - posts
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor

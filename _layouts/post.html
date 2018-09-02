@@ -1,0 +1,24 @@
+---
+layout: page
+---
+<div class="container mt-3">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/">Home</a></li>
+			<li class="breadcrumb-item"><a href="/blog.html">Blog</a></li>
+			<li class="breadcrumb-item active" aria-current="page">
+				{{ page.title }}
+			</li>
+		</ol>
+	</nav>
+	<img src="/images/blog/{{ page.img_src }}"
+			 width="112"
+			 height="112"
+			 alt="{{ page.post_title }}"
+			 title="{{ page.post_title }}">
+	<h1>{{ page.post_title }}</h1>
+	<div class="mb-1 text-muted">
+		{{ page.date | date: "%b %-d, %Y" }}
+	</div>
+	{{ content }}
+</div>

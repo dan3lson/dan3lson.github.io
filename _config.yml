@@ -13,6 +13,7 @@ timezone: America/New_York
 collections:
   - portfolio
   - posts
+  - books
 
 exclude:
   - Gemfile

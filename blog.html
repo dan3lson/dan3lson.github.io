@@ -24,16 +24,16 @@ header-emoji: memo
                   {{ post.title }}
                 </a>
               </h3>
-              <p class="card-text">
+              <div class="card-text">
                 <div class="mb-1 text-muted">
                   {{ post.date | date: "%b %-d, %Y" }}
                 </div>
-                  {{ post.content | truncate: 200 }}
-                  <a href="{{ post.url }}">
-                    continue reading
-                    <i class="far fa-hand-point-right"></i>
-                  </a>
-              </p>
+                {{ post.content | truncate: 150 }}
+                <a href="{{ post.url }}">
+                  continue reading
+                  <i class="far fa-hand-point-right"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

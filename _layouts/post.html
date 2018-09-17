@@ -11,13 +11,17 @@ layout: page
 			</li>
 		</ol>
 	</nav>
-	<img src="/images/blog/{{ page.img_src }}"
-			 alt="{{ page.post_title }}"
-			 class="img-fluid"
-			 title="{{ page.post_title }}">
-	<h1>{{ page.post_title }}</h1>
-	<div class="mb-1 text-muted">
-		{{ page.date | date: "%b %-d, %Y" }}
+	<div class="row">
+		<div class="col-md-8">
+			<img src="/images/blog/{{ page.img_src }}"
+					 alt="{{ page.post_title }}"
+					 class="img-fluid"
+					 title="{{ page.post_title }}">
+			<h1>{{ page.post_title }}</h1>
+			<div class="mb-1 text-muted">
+				{{ page.date | date: "%b %-d, %Y" }}
+			</div>
+			{{ content }}
+		</div>
 	</div>
-	{{ content }}
 </div>

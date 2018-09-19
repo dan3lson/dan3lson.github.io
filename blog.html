@@ -1,11 +1,23 @@
 ---
 layout: page
-title: Sharing my thoughts and journey on topics like web development, entrepreneurship, and my life.
-description: Sharing my thoughts and journey on topics like web development, entrepreneurship, and my life.
+title: Sharing my thoughts on topics like web development, entrepreneurship, books, and life.
+description: Sharing my thoughts on topics like web development, entrepreneurship, books, and life.
 keywords: danelson rosa blog freelancer drone web development hire entrepreneurship life blogger
 header: Blog
 header-emoji: memo
 ---
+<div class="pt-3 text-center bg-secondary">
+  <div class="row no-gutters">
+    <div class="col-8 offset-2">
+      <p>
+        My thoughts on topics like
+        web development, entrepreneurship, books, and life. Leave comments and
+        let's chop it up.
+      </p>
+    </div>
+  </div>
+</div>
+
 <div class="container mt-3">
   <div>
     {% assign posts = site.posts | sort: "rank"  %}
@@ -40,3 +52,5 @@ header-emoji: memo
     {% endfor %}
   </div>
 </div>
+
+{% include footer.html %}

@@ -14,9 +14,49 @@
   text-align: center;
 }
 
+footer {
+	border-top: 1px solid lightgray;
+  margin-top: 7rem;
+  padding-top: 1rem;
+}
+
+/*** EMOJIS ***/
 .ec-running-man::before {
 	content: "🏃🏾‍";
 }
+
+.ec-dominican-flag::before {
+	content: "🇩🇴";
+}
+
+.ec-the-human-bronx::before {
+	content: "🙅🏾‍♂️";
+}
+
+.ec-arm::before {
+	content: "💪🏾" !important;
+}
+
+.ec-weight-lifting-man::before {
+	content: "🏋🏾‍♂️" !important;
+}
+
+.ec-red-diamond::before {
+	content: "♦️";
+}
+
+.ec-writing-hand::before {
+	content: "✍🏾" !important;
+}
+
+.ec-red-heart::before {
+	content: "❤️";
+}
+
+.ec-point-down::before {
+	content: "👇🏾" !important;
+}
+/*** end of EMOJIS ***/
 
 /*** ABOUT ***/
 #bg-about {

@@ -11,8 +11,11 @@ header-emoji: memo
     <div class="col-8 offset-2">
       <p>
         My thoughts on topics like
-        web development, entrepreneurship, books, and life. Leave comments and
-        let's chop it up.
+        web development, entrepreneurship, books, and life. Leave comments after
+        reading a post and let's chop it up.
+        <a href="javascript:;" onclick="ml_account('webforms', '1047328', 'z9n1a5', 'show')" class="text-dark">
+          Click here to subscribe for the latest posts and updates!
+        </a>
       </p>
     </div>
   </div>
@@ -21,9 +24,9 @@ header-emoji: memo
 <div class="container mt-3">
   <div>
     {% assign posts = site.posts | sort: "rank"  %}
-    {% for post in posts %}
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
+    <div class="row">
+      {% for post in posts %}
+        <div class="col-md-4">
           <div class="card mb-5">
             <img class="card-img-top img-fluid"
                  src="/images/blog/{{ post.img_src }}"
@@ -48,8 +51,8 @@ header-emoji: memo
             </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 

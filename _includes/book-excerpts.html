@@ -1,0 +1,8 @@
+<section class="book-excerpts mb-5 bg-light">
+	<ul class="list-groupg list-group-flush">
+		{% assign excerpts = include.data %}
+		{% for excerpt in excerpts %}
+			<li class="list-groupg-item">{{ excerpt.text }}</li>
+		{% endfor %}
+	</ul>
+</section>

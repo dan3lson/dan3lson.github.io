@@ -28,43 +28,44 @@ header-emoji: briefcase
         and wanting my client's projects to succeed as much as they do.
       </p>
     </div>
+
     {% assign projects = site.portfolio | sort: "rank"  %}
     {% for project in projects %}
-    <div class="col-md-8 offset-md-2 pt-5 pb-5">
-      <div class="card">
-        <img class="card-img-top"
-        src="/images/portfolio/{{ project.img_src }}"
-        alt="{{ project.img_alt }}">
-        <div class="card-body">
-          <p class="card-text">
-            <ul class="fa-ul">
-              <li>
-                <span class="fa-li">
-                  <i class="fas fa-info-circle"></i>
-                </span>
-                {{ project.description }}
-              </li>
-              {% if project.quote %}
+      <div class="col-md-6 pt-5 pb-5">
+        <div class="card">
+          <img class="card-img-top"
+          src="/images/portfolio/{{ project.img_src }}"
+          alt="{{ project.img_alt }}">
+          <div class="card-body">
+            <p class="card-text">
+              <ul class="fa-ul">
                 <li>
                   <span class="fa-li">
-                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-info-circle"></i>
                   </span>
-                  {{ project.quote }}
-                  <br>
-                  <span class="text-secondary">{{ project.cite }}</span>
+                  {{ project.description }}
                 </li>
-              {% endif %}
-            </ul>
-          </p>
-        </div>
-        <div class="card-footer bg-dark">
-          {% include services_call_to_action.html
-                     message="bring your idea to life"
-                     email="webdev@danelsonrosa.com"
-          %}
+                {% if project.quote %}
+                  <li>
+                    <span class="fa-li">
+                      <i class="fas fa-quote-left"></i>
+                    </span>
+                    <span class="text-success">{{ project.quote }}</span>
+                    <br>
+                    <span class="text-secondary">{{ project.cite }}</span>
+                  </li>
+                {% endif %}
+              </ul>
+            </p>
+          </div>
+          <div class="card-footer bg-dark">
+            {% include services_call_to_action.html
+                       message="bring your idea to life"
+                       email="webdev@danelsonrosa.com"
+            %}
+          </div>
         </div>
       </div>
-    </div>
     {% endfor %}
   </div>
 </div>

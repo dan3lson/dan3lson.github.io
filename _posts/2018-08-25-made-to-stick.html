@@ -69,21 +69,17 @@ header-emoji: memo
 
 {% include book-call-to-action.html %}
 
-<div class="mt-5 mb-5 text-center bg-light">
+<div class="mt-5 text-center bg-light">
 	<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=dan3lson-20&language=en_US&marketplace=amazon&region=US&placement=B000N2HCKQ&asins=B000N2HCKQ&linkId=873ad460ab1606e9999d6b9e2a168991&show_border=true&link_opens_in_new_window=true"></iframe>
 </div>
 
+{% include amazon-associates-disclaimer.html title="Made to Stick" %}
+
 {% include read-excerpts-and-subscribe.html num_excerpts="275" %}
 
-<section class="book-excerpts mb-5">
-	<ul class="list-groupg list-group-flush">
-		{% for excerpt in site.data.made_to_stick.excerpts %}
-			<li class="list-groupg-item">{{ excerpt.text }}</li>
-		{% endfor %}
-	</ul>
-</section>
+{% include book-excerpts.html data=site.data.made_to_stick.excerpts %}
 
-<div class="mt-5 mb-5 text-center bg-light">
+<div class="mt-5 text-center bg-light">
 	<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=dan3lson-20&language=en_US&marketplace=amazon&region=US&placement=B000N2HCKQ&asins=B000N2HCKQ&linkId=873ad460ab1606e9999d6b9e2a168991&show_border=true&link_opens_in_new_window=true"></iframe>
 </div>
 

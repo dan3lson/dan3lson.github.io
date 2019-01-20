@@ -1,0 +1,4 @@
+.link-to-page:hover {
+	cursor: pointer;
+	opacity: .8;
+}

@@ -2,3 +2,15 @@
 	cursor: pointer;
 	opacity: .8;
 }
+
+h1.display-5 {
+	color: #5C000A;
+}
+
+.navbar-dark {
+	background: #5C000A !important;
+}
+
+.dropdown-item.active {
+	background-color: #5C000A !important;
+}

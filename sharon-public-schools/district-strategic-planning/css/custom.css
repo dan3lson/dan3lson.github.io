@@ -7,10 +7,23 @@ h1.display-5 {
 	color: #5C000A;
 }
 
+.dropdown-item.active {
+	background-color: #E8B827 !important;
+	color: #000;
+}
+
+.navbar-brand {
+	font-size: 24px;
+}
+
+.navbar-brand img {
+	position: absolute;
+}
+
 .navbar-dark {
 	background: #5C000A !important;
 }
 
-.dropdown-item.active {
-	background-color: #5C000A !important;
+.navbar-dark span {
+	color: #5C000A;
 }

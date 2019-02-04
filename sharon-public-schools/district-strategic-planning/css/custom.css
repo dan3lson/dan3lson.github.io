@@ -3,6 +3,10 @@
 	opacity: .8;
 }
 
+.fa-circle, .fa-square.fa-stack-2x {
+	color: #868e96;
+}
+
 h1.display-5 {
 	color: #5C000A;
 }
